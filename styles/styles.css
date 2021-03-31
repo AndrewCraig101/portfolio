@@ -10,6 +10,8 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
     Body {
     background-color: #484d5c;
+    display: flex;
+    justify-content: center;
     }
 
 
