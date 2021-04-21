@@ -20,99 +20,113 @@
 
     <div class="wrapper">
         <div class="landingPage">
-            <h1>Andrew Craig</h1>
+           
+            <div class="landingLeftSide">
+                <h1>Andrew Craig</h1>
                 <h2>Web Developer</h2>
-
-            <img src="" alt="">
-
-            <i class="fas fa-code"></i>
-
                 <div class="contact">
-                    <div class="logo logo2">
-                        <i class="fas fa-envelope"></i>
-                        <p>andrewcraigweb@gmail.com</p>
+                    <div class="tooltip logo logo1">
+                        <span class="tooltiptext">LinkedIn</span>
+                            <a href="">
+                            <i class="fab fa-linkedin"></i>
+                            </a>
                     </div>
-                    <div class="logo logo3">
+
+                    <div class="tooltip logo logo2">
+                        <span class="tooltiptext">Email</span>
+                        <a href="mailto:andrewcraigweb@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+
+                    <div class="tooltip logo logo3">
+                        <span class="tooltiptext">Resume</span>
                         <i class="fas fa-file"></i>
-                        <p><a href="./styles/assets/resume.pdf">Resume</a></p>
+                        <p><a href="./styles/assets/resume.pdf"></a></p>
+                    </div>
+
+                    <div class="tooltip logo logo4">
+                        <span class="tooltiptext">Github</span>
+                        <a href="">
+                        <i class="fab fa-github-square"></i>
+                        </a>
                     </div>
                 </div>
+            </div>
+            <div class="landingImgDiv">
+                <img src="./styles/assets/landingCrop.png" alt="">
+            </div>
         </div>
 
 
 
         <header id="header">
             <div class=" side leftSide">
-                
-                <h2>About me</h2>
-                <div class="aboutMe">
-                    <p>Welcome to my page. I am a front end web developer with experience creating responsive, accessible and professionally coded websites. I am passionate about work flow efficiency and it’s my goal to write code that will save time and work for other people!  
-                    </p>
-                    <p>Coming from a background in sales and management, I am skilled at working in teams through communication, delegation, time management and strategic assignment. To learn a bit more about me, skip to the bottom and watch a <a href="#musicVideo" class="musicVidLink" >music video</a> I directed. Looking forward to the future.</p>
-                </div>
-                <div class="languagesContainer">
-                    <h2 class="skillsHeader">Skills</h2>
-                    <section class="languages">
-                        <ul class="skills1">
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>SCSS</li>
-                        </ul>
-                        <ul class="skills2">
-                            <li>REST API’s</li>
-                            <li>Firebase</li>
-                            <li>GitHub</li>
-                        </ul>
-                        <ul class="skills3" >
-                            <li>Responsive Design</li>
-                            <li>Web Accessibility</li>
-                            <li>Collaboration</li>
-                        </ul>
-                        <ul class="skills4" >
-                            <li>Javascript(ES6+)</li>
-                            <li>ReactJS</li>
-                        </ul>
-                        <ul class="lastSkillUl" ><li>Soft Skills: Management, sales, communication</li></ul>
-                    </section>
+                <div class="leftSideFlex">
+                        <h2>About me</h2>
+                        <div class="aboutMe">
+                            <p>Welcome to my page. I am a front end web developer with experience creating responsive, accessible and professionally coded websites. I am passionate about work flow efficiency and it’s my goal to write code that will save time and work for other people!  
+                            </p>
+                            <p>Coming from a background in sales and management, I am skilled at working in teams through communication, delegation, time management and strategic assignment. To learn a bit more about me, skip to the bottom and watch a <a href="#musicVideo" class="musicVidLink" >music video</a> I directed. Looking forward to the future.</p>
+                        </div>
+                        <h2 class="skillsHeader">Skills</h2>
+
+                        <div class="languagesContainer">
+                            <section class="languages">
+                                <ul class="skills1">
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
+                                    <li>SCSS</li>
+                                </ul>
+                                <ul class="skills2">
+                                    <li>REST API’s</li>
+                                    <li>Firebase</li>
+                                    <li>GitHub</li>
+                                </ul>
+                                <ul class="skills3" >
+                                    <li>Responsive Design</li>
+                                    <li>Web Accessibility</li>
+                                    <li>Collaboration</li>
+                                </ul>
+                                <ul class="skills4" >
+                                    <li>Javascript(ES6+)</li>
+                                    <li>ReactJS</li>
+                                </ul>
+                                <ul class="lastSkillUl" ><li>Soft Skills: Management, sales, communication</li></ul>
+                            </section>
+                        </div>
                 </div>
             </div>
+
+
             <div class="side rightSide">
                 
 
                 <section class="projectLinksFlex">
                     <h2>Projects</h2>
-                    <div class="projectLinks">
-                        <ul class="projectLinks">
+                    <div class="projectLinks" id="menu">
 
                             <a href="#refrigP">Refrigeration Versification</a>
-                            <p><span class="reactSpan">React - </span>
-                                <span class="apiSpan">API - </span>
-                                <span class="firebaseSpan" Span>Firebase - </span>
-                                <span class="cssSpan"> CSS/HTML</span>
+                            <p> React - API - Firebase - CSS/HTML
                             </p>
 
                             <a href="#oscarP">Oscar Finder</a>
-                            <p><span class="reactSpan">React - </span>
-                                <span class="firebaseSpan" Span>Firebase - </span>
-                                <span class="cssSpan"> CSS/HTML</span>
+                            <p>React - Firebase - CSS/HTML
                             </p>
 
                             <a href="#pokemonP">Pokemon Tinder</a>
-                            <p><span class="javascriptSpan">Javascript - </span>
-                                <span class="apiSpan">API - </span>
-                                <!-- <span class="firebaseSpan" Span>Firebase - </span> -->
-                                <span class="cssSpan"> CSS/HTML</span>
+                            <p> Javascript - API - CSS/HTML
                             </p>
 
                             <a href="#boatRideP">Boat Ride Adventures</a>
-                            <p><span class="javascriptSpan">Javascript - </span>
-                                <span class="cssSpan"> CSS/HTML</span>
+                            <p>Javascript - CSS/HTML
                             </p>
 
                             <a href="#junoTechP">Juno Tech Test</a>
                             <p>
-                                <span class="cssSpan"> CSS/HTML</span>
+                                CSS/HTML
                             </p>
+                            
 
                     </div>
                 </section>
@@ -253,11 +267,9 @@
                             <a href="">Git</a> 
                             <a href="">Live</a> 
                             <a href="#header">Menu</a>
-                            <!-- <a href="">Mobile</a> -->
+                           
                         </div>
-                        <!-- <div class="mobileRefrig">
-                                <img src="" alt="">
-                            </div> -->
+                     
                     </div>
             
                 </div>
@@ -266,9 +278,9 @@
 
         <section id="musicVideo" class="musicVideo">
             <div class="videoFlex">
-                <p>One of my past focus's was producing music and directing video. I'm most proud of this one</p>
+                <p>One of my passions is producing music and directing video.</p>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/H2SdOwWp_wE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <p>Using a stage name Andrew Cameron, I wrote and performed both vocals over an instrumental by Grammy Award winning M-PHAZES. The video was shot on Red Dragon and Phantom Drone. All set design, location, casting and concept by myself. Four days shooting took me an entire summer to plan and execute. </p>
+                <p>Using a stage name Andrew Cameron, I wrote and performed all vocals over an instrumental by Grammy Award winning M-PHAZES. The video was shot on Red Dragon and Phantom Drone. All set design, direction, location, casting and concept by myself. Four days shooting took me an entire summer to plan and execute with a team of 12.</p>
             </div>
             
 

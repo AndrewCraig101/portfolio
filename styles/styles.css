@@ -35,11 +35,109 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         color: #c0ccd4;
     }
 
+    .wrapper {
+        width: 100%;
+        max-width: 1800px;
+    }
+
     .landingPage {
+        display: flex;
+        justify-content: center;
         background-color: white;
-        height: 60vh;
+        height: 120vh;
         width: 100%;
     }
+
+    .landingPage h1  {
+        margin-bottom: 15px;
+    }
+
+    .landingLeftSide {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 110px;
+        margin-right: 70px;
+    
+    }
+
+    .landingPage img {
+        
+    }
+
+    .landingImgDiv {
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+
+    }
+
+    .contact {
+        margin-top: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    i {
+        color: grey;
+        font-size: 2.5rem;
+       
+    }
+
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        /* border-bottom: 1px dotted black; */
+      }
+      
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -60px;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+      
+      .tooltip .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+        margin-bottom: 20px;
+      }
+      
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .logo {
+        margin-bottom: 20px;
+      }
+
+
+
+    /* HEADER HEADER */
+    /* HEADER HEADER */
+    /* HEADER HEADER */
 
     header {
         display: flex;
@@ -49,7 +147,6 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         /* background-image: url("assets/cyclone.jpg");
         background-repeat: no-repeat;
         background-size: cover; */
-
     }
 
     .side {
@@ -60,16 +157,21 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     }
 
     .leftSide {
-        width: 57%;
-        margin-left: 35px;
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
-    .wrapper {
-        width: 100%;
-        max-width: 1400px;
+    .leftSideFlex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
     }
 
-   
+
 
     h1 {
         margin-right: 40px;
@@ -78,7 +180,6 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     }
 
     .leftSide h2 {
-        margin-left: 220px;
         font-size: 2.3rem;
         margin-bottom: 10px;
         margin-top: 10px;
@@ -87,14 +188,12 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     .musicVidLink {
         color: white;
         text-decoration: grey;
-        text-decoration: underline;
-        
+        text-decoration: underline; 
     }
 
     .leftSide p {
-        margin-left: 20px;
         margin-bottom: 15px;
-        width: 74%;
+        width: 100%;
         margin-top: 8px;
         text-indent: 43px;
     }
@@ -137,7 +236,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     }
 
     .languages {
-        width: 80%;
+        width: 100%;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -150,6 +249,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         flex-direction: column;
         width: 100%;  
         margin-bottom: 60px;
+        align-items: center;
     }
 
     .languages li {
@@ -165,17 +265,6 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         width: 25%;
     }
 
-    .logo {
-        display: flex;
-        margin: 5px 0px;
-        align-items: center;
-    }
-
-    i {
-        font-size: 1.3rem;
-        margin-bottom: 7px;
-        margin-right: 10px;
-    }
 
     .contact {
         margin-bottom: 70px;
@@ -211,7 +300,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         text-decoration: underline;
     }
 
-    .projectLinks span {
+    .projectLinks p {
         color: rgb(67, 175, 247);
     }
 
@@ -241,7 +330,6 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         flex-direction: column;
         align-items: flex-start;
         padding-top: 210px;
-        
     }
 
     
@@ -343,14 +431,14 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         background-image: url('./assets/pokemon.png');
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: 0px -50px;
+        
     }
 
     .boatRideP {
         background-image: url('assets/boat.png');
         background-repeat: no-repeat;
         background-size: cover;
-        background-position-y: -220px;
+        
     }
 
     .junoTechP {
@@ -382,11 +470,99 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         margin-top: 20px;
     }
 
+    .musicVideo P {
+        background-color: grey;
+        padding: 15px;
+        border-radius: 0px 10px 0px 10px;
+    }
+
     /* MEDIA QUERIES */
     /* MEDIA QUERIES */
     /* MEDIA QUERIES */
 
-    /* HEADER */
+    @media (max-width: 1000px) {
+
+    }
+
+    @media (max-width: 1000px) {
+
+        header {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .leftSide {
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .languages {
+            
+        }
+
+        div .rightSide {
+            width: 100%;
+        }
+
+        .projectLinksFlex {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .projectLinks {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .projectLinks P {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .secondPHeadingRefrig {
+            margin-left: 45px
+        }
+
+        .secondPHeadingBoat {
+            margin-left: 45px;
+        }
+    }
+
+    @media (max-width: 780px) {
+
+        .leftSideP {
+            width: 55%;
+        }
+
+        .projectSection p {
+            line-height: 1rem;
+            font-size: 0.8rem;
+        }
+
+        .secondPHeadingRefrig {
+            margin-left: 28px;
+        }
+
+        .musicVideo P {
+            width: 60%;
+        }
+    }
+
+    @media (max-width: 650px) {
+        
+        .leftSideP {
+            width: 65%;
+        }
+
+    }
+
+   
 
     @media (max-width: 450px) {
 
@@ -472,7 +648,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         }
 
         .projectSection a {
-            font-size: 2.7vw;
+            font-size: 3.5vw;
         }
 
         /* PROJECT SECTION */
@@ -497,6 +673,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
         .leftSideP {
             margin: 0px;
+            width: 100%;
         }
 
         .leftSideP, .rightSideLinks {
@@ -529,6 +706,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
         .leftsidePFlex {
             padding-top: 130px;
+            width: 60%;
         }
 
         .projectSection section {
@@ -593,7 +771,6 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
             background-image: url('./assets/techTest.png');
             background-repeat: no-repeat;
             background-size: cover;
-            
         }
 
         /* VIDEO SECTION */
@@ -603,6 +780,8 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         .videoFlex P {
             width: 70%;
             text-align: center;
+            border-radius: 10px 0px 10px 0px;
+            border: 2px solid white;
         }
 
         iframe {
