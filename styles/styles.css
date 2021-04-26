@@ -75,6 +75,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
     .landingPage img {
         z-index: 0;
+        align-self: flex-start;
     }
 
     .landingImgDiv {
@@ -500,7 +501,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     /* MEDIA QUERIES */
     /* MEDIA QUERIES */
 
-    @media (max-width: 1050px) {
+    @media screen and (max-width: 1050px) {
 
         .landingLeftFlex {
             margin-right: 60px;
@@ -516,7 +517,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
     }
 
-    @media (max-width: 1000px) {
+    @media screen and (max-width: 1000px) {
 
         .landingLeftSide {
             width: 50%;
@@ -540,7 +541,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     }
 
    
-    @media (max-width: 976px) {
+    @media screen and (max-width: 976px) {
 
        
         header {
@@ -591,7 +592,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         }
     }
 
-    @media (max-width: 935px) {
+    @media screen and (max-width: 935px) {
 
       
 
@@ -625,7 +626,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
     }
 
-    @media (max-width: 836px) {
+    @media screen and (max-width: 836px) {
 
         .landingLeftFlex {
             width: 100%;
@@ -692,7 +693,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         }
     }
 
-    @media (max-width: 650px) {
+    @media screen and (max-width: 650px) {
         
         .leftSideP {
             width: 65%;
@@ -713,7 +714,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
    
 
-    @media (max-width: 450px) {
+    @media screen and (max-width: 450px) {
 
         img {
             width: 73%;
