@@ -39,6 +39,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         width: 100%;
         max-width: 1440px;
         background-color: white;
+        margin: 0 auto;
     }
 
     .landingPage {
@@ -953,8 +954,19 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     @media screen and (max-width: 350px)  {
 
         .landingPage {
-            padding-top: 0px;
-            height: 80vh
+            height: 30vh;
+            padding-bottom: 180px;
+            padding-top: 100px;
+            
+        }
+
+        .landingPage img {
+            display: none;
+        }
+
+        .landingPage {
+            padding-top: 120px;
+            height: 30vh;
         }
 
 
@@ -979,22 +991,6 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
             font-size: 1.1rem;
         }
 
-        
-    }
-
-    @media screen and (max-width: 250px) {
-
-        .landingPage {
-            height: 30vh;
-            padding-bottom: 180px;
-            padding-top: 100px;
-            
-        }
-
-        .landingPage img {
-            display: none;
-        }
-
         .contact {
             flex-wrap: wrap;
         }
@@ -1007,6 +1003,16 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
             width: 100%;
         }
 
+        
+
+        
+
+        
+    }
+
+    @media screen and (max-width: 250px) {
+
+      
         .landingPage h2 {
             font-size: 1.5rem;
         }
@@ -1015,9 +1021,9 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
             font-size: 2.3rem;
         }
 
-        /* .projectLinks P {
+        .projectLinks P {
             text-align: center;
-        } */
+        }
     }
 
 
