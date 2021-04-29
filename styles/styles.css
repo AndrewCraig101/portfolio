@@ -10,8 +10,8 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
     Body {
     background-color: #484d5c;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     }
 
     body {
@@ -54,7 +54,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         display: flex;
         justify-content: center;
         align-items: center;
-        z-index: 0;
+        /* z-index: 0; */
        
     }
 
@@ -74,8 +74,8 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     }
 
     .landingPage img {
-        z-index: 0;
-        align-self: flex-start;
+        /* z-index: 0; */
+        /* align-self: flex-start; */
     }
 
     .landingImgDiv {
@@ -223,7 +223,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     }
 
     .languages p {
-        font-size: 3 rem;
+        font-size: 3rem;
         width: 100%
     }
 
@@ -501,26 +501,31 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     /* MEDIA QUERIES */
     /* MEDIA QUERIES */
 
-    @media screen and (max-width: 1050px) {
+    @media screen and (max-width: 1400px) {
 
         .landingLeftFlex {
             margin-right: 60px;
         }
 
         .landingLeftSide {
-            width: 50%
+            width: 50%;
         }
 
-        .landingLeftSide h1, h2 {
+        .landingLeftSide h1 {
+            text-align: center;
+        }
+
+        .landingLeftSide h2 {
             text-align: center;
         }
 
     }
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1140px) {
 
         .landingLeftSide {
             width: 50%;
+            margin-right: 150px;
         }
 
         .contact {
@@ -528,11 +533,11 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         }
 
         .landingLeftSide h1 {
-            font-size: 3rem;
+            font-size: 4.5rem;
         }
 
         .landingLeftSide h2 {
-            font-size: 1.8rem;
+            font-size: 2rem;
         }
 
         .logo {
@@ -541,7 +546,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     }
 
    
-    @media screen and (max-width: 976px) {
+    @media screen and (max-width: 1035px) {
 
        
         header {
@@ -592,7 +597,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         }
     }
 
-    @media screen and (max-width: 935px) {
+    @media screen and (max-width: 1035px) {
 
       
 
@@ -626,7 +631,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
     }
 
-    @media screen and (max-width: 836px) {
+    @media screen and (max-width: 1035px) {
 
         .landingLeftFlex {
             width: 100%;
@@ -664,6 +669,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
         .landingLeftSide {
             width: 100%;
+            margin-right: 0px
         }
 
         .contact {
@@ -941,9 +947,77 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         iframe {
             width: 80%;
         }
-        
-
       
+    }
+
+    @media screen and (max-width: 350px)  {
+
+        .landingPage {
+            padding-top: 0px;
+            height: 80vh
+        }
+
+
+        .landingLeftSide h1 {
+            font-size: 2.8rem;
+        }
+
+        .landingLeftSide h2 {
+            font-size: 1.8rem;
+        }
+
+        i {
+            font-size: 1.7rem;
+        }
+
+        .projectLinks a {
+            font-size: 1.2rem;
+        }
+
+        .projectLinks P {
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        
+    }
+
+    @media screen and (max-width: 250px) {
+
+        .landingPage {
+            height: 30vh;
+            padding-bottom: 180px;
+            padding-top: 100px;
+            
+        }
+
+        .landingPage img {
+            display: none;
+        }
+
+        .contact {
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            margin: 10px 20px;
+        }
+
+        .languages ul {
+            width: 100%;
+        }
+
+        .landingPage h2 {
+            font-size: 1.5rem;
+        }
+
+        .landingPage h1 {
+            font-size: 2.3rem;
+        }
+
+        /* .projectLinks P {
+            text-align: center;
+        } */
     }
 
 
