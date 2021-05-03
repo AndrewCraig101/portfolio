@@ -46,7 +46,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         display: flex;
         justify-content: center;
         background-color: white;
-        height: 120vh;
+        min-height: 100vh;
         width: 100%;
     }
 
@@ -75,8 +75,8 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     }
 
     .landingPage img {
-        /* z-index: 0; */
-        /* align-self: flex-start; */
+        align-self: center;
+        max-width: 100%;
     }
 
     .landingImgDiv {
@@ -502,14 +502,14 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     /* MEDIA QUERIES */
     /* MEDIA QUERIES */
 
-    @media screen and (max-width: 1400px) {
+    @media screen and (max-width: 1200px) {
 
         .landingLeftFlex {
             margin-right: 60px;
         }
 
         .landingLeftSide {
-            width: 50%;
+            width: 100%;
         }
 
         .landingLeftSide h1 {
@@ -522,15 +522,15 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
     }
 
-    @media screen and (max-width: 1140px) {
+    @media screen and (max-width: 960px) {
+
+        header {
+            margin-top: 0px;
+        }
 
         .landingLeftSide {
             width: 50%;
-            margin-right: 150px;
-        }
-
-        .contact {
-            flex-direction: column;
+           
         }
 
         .landingLeftSide h1 {
@@ -547,9 +547,27 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     }
 
    
-    @media screen and (max-width: 1035px) {
+    @media screen and (max-width: 800px) {
 
-       
+
+        .landingPage {
+            min-height: 80vh;
+        }
+
+
+        .landingLeftSide h1 {
+            font-size: 3.4rem;
+        }
+
+        .landingLeftSide h2 {
+            font-size: 2.1rem;
+        }
+
+        i {
+            font-size: 1.9rem;
+        }
+
+
         header {
             flex-direction: column;
             align-items: center;
@@ -596,48 +614,22 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         .secondPHeadingBoat {
             margin-left: 45px;
         }
-    }
 
-    @media screen and (max-width: 1035px) {
+        .projectLinksFlex {
 
-      
-
-        /* .landingLeftSide {
-           width: 80%;
+            margin-bottom: 30px;
         }
-
-        .landingLeftSide h1 {
-            font-size: 2.7rem; 
-            text-align: center;
-            width: 40%;
-        }
-
-        .landingLeftSide h2 {
-            font-size: 1.2rem ;
-        }
-
-        i {
-            font-size: 1.9rem;
-        }
-
-        .landingLeftFlex {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: flex-start;
-            width: 100%;
-
-        } */
-
 
     }
 
-    @media screen and (max-width: 1035px) {
+    
+
+    @media screen and (max-width: 700px) {
 
         .landingLeftFlex {
             width: 100%;
             margin-right: 0px;
-            margin-top: 70px;
+            margin-top: 0px;
            
         }
 
@@ -664,7 +656,6 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         .landingPage {
             flex-direction: column;
             height: 100vh;
-            padding-top: 70px;
             overflow: hidden;
         }
 
@@ -954,7 +945,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     @media screen and (max-width: 350px)  {
 
         .landingPage {
-            height: 30vh;
+            min-height: 30vh;
             padding-bottom: 180px;
             padding-top: 100px;
             
