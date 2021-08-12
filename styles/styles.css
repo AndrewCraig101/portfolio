@@ -448,17 +448,19 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         
     }
 
-    .boatRideP {
-        background-image: url('assets/boat.png');
+    .triviaTime {
+        background-image: url('assets/trivia.png');
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: 0 -80px;
         
     }
 
-    .junoTechP {
-        background-image: url('./assets/techTest.png');
+    .nbaCodeStars{
+        background-image: url('./assets/nba.png');
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: 0 -80px;
         
     }
 
